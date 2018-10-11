@@ -12,22 +12,6 @@
     --recommend-bg-color: #000;  
 }
 
-a{
-
-}
-
-a:hover{
-	animation: jump 5s infinite alternate;
-}
-
-@keyframes jump {
-    0%   {margin-top: 0.25em;}
-    25%  {margin-top: 0.5em;}
-    50%  {margin-top: 1.0em;}
-    75% {margin-top: 1.5em;}
-    100% {margin-top: 2.0em;}
-}
-
 nav {
 	background-color: var(--main-bg-color);
 	color: var(--main-txt-color);
@@ -121,7 +105,7 @@ slide{
 	background: url('http://s.isanook.com/mv/0/ui/15/79633/770a8684_copy_1532060397.jpg') center/cover;
 	width: 16em;
 	height: 18em;
-	box-shadow: 1px 1px 3px;
+	box-shadow: 1px 1px 3px #000;
 	padding: .5em;
     display: inline-block;
     position: relative;
