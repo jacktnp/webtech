@@ -81,11 +81,24 @@ function showDivs(n) {
   y[slideIndex-1].style.display = "block";
 }
 
+var name = "fond";
+
 function change() {
 	var move = document.getElementsByClassName("card");
-	for (j = 0; j < move.length; j++) {
-		move[j].style.background = "url('https://static.trueplookpanya.com/tppy/member/m_545000_547500/545994/cms/images/2018-05-May/kaimookbnk48_11.jpg') center/cover";
+
+	if(name == "fond"){
+		name = "mook";
+		for (j = 0; j < move.length; j++) {
+			move[j].style.background = "url('https://static.trueplookpanya.com/tppy/member/m_545000_547500/545994/cms/images/2018-05-May/kaimookbnk48_11.jpg') center/cover";
+		}
 	}
+	else if(name == "mook"){
+		name = "fond";
+		for (j = 0; j < move.length; j++) {
+			move[j].style.background = "url('http://s.isanook.com/mv/0/ui/15/79633/770a8684_copy_1532060397.jpg') center/cover";
+		}
+	}
+	
 }
 </script>
 
