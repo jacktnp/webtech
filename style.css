@@ -12,6 +12,22 @@
     --recommend-bg-color: #000;  
 }
 
+a{
+
+}
+
+a:hover{
+	animation: jump 5s infinite alternate;
+}
+
+@keyframes jump {
+    0%   {margin-top: 0.25em;}
+    25%  {margin-top: 0.5em;}
+    50%  {margin-top: 1.0em;}
+    75% {margin-top: 1.5em;}
+    100% {margin-top: 2.0em;}
+}
+
 nav {
 	background-color: var(--main-bg-color);
 	color: var(--main-txt-color);
@@ -118,10 +134,23 @@ slide{
 	background: #000000a1;
 	color: #fff;
 	width: 100%;
-	height: 6em;
+	height: 5.5em;
 	bottom: 0%;
 	position: absolute;
 	margin-left: -8px;
+	transition: .5s;
+}
+
+.card-text:hover{
+	height: 100%;
+}
+
+.card-text:hover .card-title{
+	padding-top: 50%;
+}
+
+.card-text:hover .card-author{
+	padding-top: 40%;
 }
 
 .card-title{
@@ -129,13 +158,15 @@ slide{
 	font-size: 1.25em;
 	text-align: center;
 	font-weight: bold;
+	transition: .65s;
 }
 
 .card-author{
-	padding-top: 1.5em;
+	padding-top: 1em;
 	padding-left: 1.5em;
 	font-size: .75em;
 	text-align: left;
+	transition: .65s;
 }
 
 h1{
