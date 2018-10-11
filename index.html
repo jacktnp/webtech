@@ -44,6 +44,7 @@
 		<div class="sub-category">Design Theory</div>
 		<div class="sub-category">UX/UI Design</div>
 		<div class="sub-category">Info Graphic</div>
+		<button class="sub-category" style="width: 100%;background: linear-gradient(to right, #59c173, #a17fe0, #5d26c1);color: #fff;border: 1px solid #a17fe0;" onclick="change()">แปลงร่าง</button>
 	</div>
 	<div class="content">
 		<h1><i class="fas fa-star" style="color:#ffab18;"></i> TRENDING</h1>
@@ -78,6 +79,13 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";
   y[slideIndex-1].style.display = "block";
+}
+
+function change() {
+	var move = document.getElementsByClassName("card");
+	for (j = 0; j < move.length; j++) {
+		move[j].style.background = "url('https://static.trueplookpanya.com/tppy/member/m_545000_547500/545994/cms/images/2018-05-May/kaimookbnk48_11.jpg') center/cover";
+	}
 }
 </script>
 
