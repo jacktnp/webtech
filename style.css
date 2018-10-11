@@ -34,19 +34,22 @@ random {
     align-items: center;
 }
 
-content{
+container{
 	background-color: var(--main-bg-color);
 	color: var(--main-txt-color);
 	display: flex;
 	flex-direction: all;
     padding: var(--main-padding);
     justify-content: space-between;
-    align-items: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 slide{
 	width: 100%;
-	height: 500px;
+	height: auto;
 	margin-bottom: 2em;
 }
 
@@ -60,9 +63,9 @@ slide{
 	display: flex;
 	flex-direction: column;
     padding: var(--main-padding);
-    justify-content: space-between;
-    align-items: center;
-    width: 20%;
+    width: 25%;
+    position: relative;
+    margin-top: 2em;
 }
 
 .sub-category{
@@ -75,7 +78,7 @@ slide{
 	text-align: center;
 }
 
-.sub-category:hover{
+.sub-category-selected{
 	background-color: #f00;
 	color: #fff;
 	border: 1px solid #000;
@@ -88,10 +91,31 @@ slide{
 }
 
 .content{
-	display: flex;
+	display: block;
 	flex-direction: inherit;
     padding: var(--main-padding);
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 100%;
+    position: relative;
+    margin-left: 1.75em;
+}
+
+.card{
+	background: url('http://s.isanook.com/mv/0/ui/15/79633/770a8684_copy_1532060397.jpg') center/cover;
+	width: 18em;
+	height: 20em;
+	box-shadow: 1px 1px 3px;
+	padding: .5em;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    margin-right: 2em;
+    margin-bottom: 2em;
+}
+
+h1{
+	border-bottom: 1px solid #000;
+	padding-bottom: .15em;
+	margin-bottom: 1em;
 }
