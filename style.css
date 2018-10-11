@@ -44,6 +44,18 @@ content{
     align-items: center;
 }
 
+slide{
+	width: 100%;
+	height: 500px;
+	margin-bottom: 2em;
+}
+
+.slide {width:100%;height: 500px;display:none;}
+.slide-text {position:absolute;bottom:25%;left:3%;color:#fff;font-size: 1.25em;}
+
+.pointer-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%);width: 2em;height: 2em;}
+.pointer-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%);width: 2em;height: 2em;}
+
 .category{
 	display: flex;
 	flex-direction: column;
