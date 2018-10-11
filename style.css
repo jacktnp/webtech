@@ -1,33 +1,82 @@
-:root {
-    --main-bg-color: coral;
-    --main-txt-color: blue;    
-    --main-padding: 15px;    
-}
-
-.nav {
-	background-color: var(--main-bg-color);
-}
-
-ul {
-    list-style-type: none;
-    margin: -9px;
+* {
+    margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #333;
+    border: 0;
 }
 
-li {
-    float: left;
+:root {
+    --main-bg-color: #fff;
+    --main-txt-color: #000;    
+    --main-padding: .7em 1em .7em 1em;
+    --recommend-bg-color: #000;  
 }
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+nav {
+	background-color: var(--main-bg-color);
+	color: var(--main-txt-color);
+	display: flex;
+	flex-direction: row;
+    min-height: 30px;
+    padding: var(--main-padding);
+    justify-content: space-between;
+    align-items: center;
 }
 
-li a:hover {
-    background-color: #111;
+random {
+	background-color: var(--recommend-bg-color);
+	display: flex;
+	flex-direction: row;
+    min-height: 50px;
+    padding: var(--main-padding);
+    justify-content: space-between;
+    align-items: center;
+}
+
+content{
+	background-color: var(--main-bg-color);
+	color: var(--main-txt-color);
+	display: flex;
+	flex-direction: all;
+    padding: var(--main-padding);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category{
+	display: flex;
+	flex-direction: column;
+    padding: var(--main-padding);
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+}
+
+.sub-category{
+	background-color: #fff;
+	color: #000;
+	border: 1px solid #000;
+	padding: .75em;
+	width: 12em;
+	margin-bottom: .75em;
+	text-align: center;
+}
+
+.sub-category:hover{
+	background-color: #f00;
+	color: #fff;
+	border: 1px solid #000;
+	padding: .75em;
+	width: 12em;
+	margin-bottom: .75em;
+	text-align: center;
+	box-shadow: 1px 1px 4px #6c6c6c;
+}
+
+.content{
+	display: flex;
+	flex-direction: inherit;
+    padding: var(--main-padding);
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
 }
