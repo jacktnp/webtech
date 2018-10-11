@@ -25,6 +25,7 @@ nav {
 
 random {
 	background-color: var(--recommend-bg-color);
+	color: #fff;
 	display: flex;
 	flex-direction: row;
     min-height: 50px;
