@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Graphico</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	<style type="text/css">
+		html{
+			font-family: kanit;
+		}
+		.container{
+			width: 50%;
+			height: auto;
+			padding: 1em 2em 1em 2em;
+			margin-right: auto;
+			margin-left: auto;
+			background: #fff;
+			box-shadow: 0px 0px 1px 1px;
+		}
+		h2{
+			font-weight: bold;
+		}
+		.info{
+			margin: -15px 0px 15px 0px;
+		}
+		.date{
+			width: 5em;
+			height: auto;
+			padding: .2em .6em .2em .6em;
+			background: #cccccc;
+			color: #fff;
+			border-radius: 20px;
+			font-size: .75em;
+			text-align: center;
+		}
+		.writer::before { 
+    		content: '✎ ';
+		}
+		.writer{
+			font-size: .85em;
+			color: #ccc;
+		}
+		.ref{
+			font-size: .85em;
+		}
+		img{
+			width: 80%;
+			margin-left: 1.5em;
+			border-radius: 15px;
+			box-shadow: 0px 0px 3px 1px;
+		}
+		p{
+			text-indent: 1.5em;
+		}
+	</style>
+</head>
+
+<body>
+
+<div class="container">
+<h2>รู้จัก Container มันคืออะไร แตกต่างจาก Virtualization อย่างไร?</h2>
+<div class="info">
+	<span class="date">15 Oct</span>
+	<span class="writer">by Blognone</span>
+</div>
+<img src="image/container.jpg">
+<h3>Virtualization มีข้อจำกัด</h3>
+<p>คำว่า "คอนเทนเนอร์" (container) เป็นเทคนิคการจัดการแพ็กเกจซอฟต์แวร์ประเภทหนึ่ง ที่มีความสัมพันธ์กับเทคนิค virtualization ที่อยู่ในโลกองค์กรมานาน ดังนั้นการอธิบายว่าคอนเทนเนอร์คืออะไร จึงมักถูกเปรียบเทียบว่าแตกต่างกับ virtualization อย่างไร</p>
+
+<p>เทคนิค virtualization คือการสร้างคอมพิวเตอร์เสมือน (virtual machine หรือ VM) ที่มีทั้งซีพียู แรม สตอเรจ ระบบปฏิบัติการ ฯลฯ ขึ้นมารันบนคอมพิวเตอร์จริงๆ อีกทีหนึ่ง โดยตัวระบบปฏิบัติการของคอมพิวเตอร์เสมือน (Guest OS) จะไม่รู้ว่าตัวเองรันอยู่บน VM แต่เข้าใจว่ารันอยู่บนฮาร์ดแวร์คอมพิวเตอร์จริงๆ</p>
+
+<p>วิธีการนี้ทำให้เกิดการแยกส่วน (isolation) ระหว่าง VM แต่ละตัวอย่างสมบูรณ์ สามารถรันระบบปฏิบัติการที่แตกต่างกันระหว่าง Guest OS กับ Host OS ได้ แต่ข้อเสียคือใช้ทรัพยากรซ้ำซ้อน ทำงานช้า เปลืองพื้นที่เก็บ OS และซอฟต์แวร์ต่างๆ ที่มักจะใช้เหมือนกันใน VM ทุกตัว</p>
+
+<img src="https://www.blognone.com/sites/default/files/externals/ae8a48fe75f6c55272b303b121192011.png">
+<div class="ref">ภาพประกอบจาก Docker</div>
+
+<h3>Container สร้างมาเพื่อแก้ไขข้อจำกัดของ Virtualization</h3>
+<p>คอนเทนเนอร์จึงถูกสร้างขึ้นมาเพื่อแก้ปัญหาข้างต้น โดยมีฮาร์ดแวร์และ OS เพียงชุดเดียวกัน ลดความซ้ำซ้อนของการใช้ทรัพยากรลง ส่วนตัวแอพพลิเคชันและซอฟต์แวร์ซึ่งเป็นจุดที่แตกต่างกันไปก็จะมี "container" (เทียบได้กับ VM) มาครอบเพื่อแบ่งส่วนทรัพยากรไว้ไม่ให้ยุ่งกัน</p>
+
+<p>จุดเด่นของคอนเทนเนอร์จึงเป็นเรื่องการใช้ทรัพยากรที่น้อยกว่า virtualization มาก อิมเมจของคอนเทนเนอร์อาจมีขนาดเพียงกี่ไม่กี่สิบ MB ในขณะที่อิมเมจของ VM ต้องใช้พื้นที่ระดับหลาย GB นอกจากนี้ ระยะเวลาที่ใช้บูต, พลังซีพียูและปริมาณแรมที่ต้องใช้ ก็ลดลงตามไปด้วย ส่งผลให้เซิร์ฟเวอร์หนึ่งเครื่องสามารถยัดคอนเทนเนอร์จำนวนมากกว่าการรัน VM ที่ให้ผลแบบเดียวกันถึง 2-3 เท่าตัว</p>
+
+<p>บางครั้ง คอนเทนเนอร์ถูกเรียกชื่อในทางเทคนิคว่า Operating-system-level virtualization หรือการสร้าง VM ที่ระดับ OS โดยเราไม่ต้องสร้างเครื่องคอมพิวเตอร์เสมือนขึ้นมาทั้งตัว</p>
+
+<p>ข้อเสียของคอนเทนเนอร์ก็ย่อมเป็นความยืดหยุ่นที่น้อยกว่า virtualization แบบดั้งเดิม โดยเฉพาะไม่สามารถใช้ OS ที่แตกต่างกันระหว่าง Guest และ Host ได้ (เพราะจุดเด่นของคอนเทนเนอร์คือการแชร์ OS ก็อปปี้เดียวกัน)</p>
+
+<img src="https://www.blognone.com/sites/default/files/externals/b7e94fbf56fe83420f370d95f9d30213.png">
+</div>
+</body>
+</html>
