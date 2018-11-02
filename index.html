@@ -9,45 +9,131 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 
-<nav>
-  <div></div>
-  <div>PyXis Project</div>
-  <div></div>
-</nav>
+<body>		  
+			  <div class="" style="align-items: center;">
+					<a href="#"> <img src="D:\webtech-master\image\banner.PNG" style="height: 60px; margin-left:52em; "/></a>
+			  </div>
+		<ul class="slides">
+				<input type="radio" name="radio-btn" id="img-1" checked />
+				<li class="slide-container">
+					<div class="slide">
+						<img src="D:\webtech-master\image\New Project (4).jpg" />
+					</div>
+					<div class="nav">
+						<label for="img-6" class="prev">&#x2039;</label>
+						<label for="img-2" class="next">&#x203a;</label>
+					</div>
+				</li>
+			
+				<input type="radio" name="radio-btn" id="img-2" />
+				<li class="slide-container">
+					<div class="slide">
+					  <img src="D:\webtech-master\image\New Project.jpg" />
+					</div>
+					<div class="nav">
+						<label for="img-1" class="prev">&#x2039;</label>
+						<label for="img-3" class="next">&#x203a;</label>
+					</div>
+				</li>
+			
+				<input type="radio" name="radio-btn" id="img-3" />
+				<li class="slide-container">
+					<div class="slide">
+					  <img src="D:\webtech-master\image\New Project (2).jpg" />
+					</div>
+					<div class="nav">
+						<label for="img-2" class="prev">&#x2039;</label>
+						<label for="img-4" class="next">&#x203a;</label>
+					</div>
+				</li>
+			
+				<input type="radio" name="radio-btn" id="img-4" />
+				<li class="slide-container">
+					<div class="slide">
+					  <img src="https://i.imgur.com/5c4bWGL.jpg" />
+					</div>
+					<div class="nav">
+						<label for="img-3" class="prev">&#x2039;</label>
+						<label for="img-5" class="next">&#x203a;</label>
+					</div>
+				</li>
+			
+				<input type="radio" name="radio-btn" id="img-5" />
+				<li class="slide-container">
+					<div class="slide">
+					  <img src="https://i.imgur.com/137dP9h.jpg" />
+					</div>
+					<div class="nav">
+						<label for="img-4" class="prev">&#x2039;</label>
+						<label for="img-6" class="next">&#x203a;</label>
+					</div>
+				</li>
+			
+				<input type="radio" name="radio-btn" id="img-6" />
+				<li class="slide-container">
+					<div class="slide">
+					  <img src="https://i.imgur.com/AbZKuX2.jpg" />
+					</div>
+					<div class="nav">
+						<label for="img-5" class="prev">&#x2039;</label>
+						<label for="img-1" class="next">&#x203a;</label>
+					</div>
+				</li>
+			
+				<li class="nav-dots">
+				  <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+				  <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+				  <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+				  <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+				  <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+				  <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+				</li>
+			</ul>
 
-<random>
-  <div></div>
-  <div>แนะนำของตรงนี้</div>
-  <div></div>
-</random>
-
-<body>
-
-<slide>
-  <img class="slide" src="https://wallpaper.campus-star.com/app/uploads/2017/09/wallpaper-n-40.jpg" >
-  <img class="slide" src="https://i.ytimg.com/vi/yUyPaBlR1kk/maxresdefault.jpg" >
-  <img class="slide" src="http://www.pixbasket.com/wp-content/uploads/2018/01/%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%AA%E0%B8%A7%E0%B8%A2%E0%B9%86-8.jpg" >
-  <img class="slide" src="http://www.pixbasket.com/wp-content/uploads/2016/08/%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%97%E0%B8%B0%E0%B9%80%E0%B8%A5%E0%B8%AA%E0%B8%A7%E0%B8%A2%E0%B9%86-11.jpg" >
-  <div class="slide-text">ออกแบบกราฟฟิคสำหรับผู้เริ่มต้น 1</div>
-  <div class="slide-text">ออกแบบกราฟฟิคสำหรับผู้เริ่มต้น 2</div>
-  <div class="slide-text">ออกแบบกราฟฟิคสำหรับผู้เริ่มต้น 3</div>
-  <div class="slide-text">ออกแบบกราฟฟิคสำหรับผู้เริ่มต้น 4</div>
-
-  <button class="pointer-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="pointer-display-right" onclick="plusDivs(1)">&#10095;</button>
-</slide>
-
-<div class="container">
-	<div class="category">
-		<div class="sub-category-selected"><i class="fas fa-star" style="color:#ffab18;"></i> TRENDING</div>
-		<div class="sub-category">BASIC</div>
-		<div class="sub-category">Design Theory</div>
-		<div class="sub-category">UX/UI Design</div>
-		<div class="sub-category">Info Graphic</div>
-		<button class="sub-category" style="width: 100%;background: linear-gradient(to right, #59c173, #a17fe0, #5d26c1);color: #fff;border: 1px solid #a17fe0;" onclick="change()">แปลงร่าง</button>
+<div class="menu-slide" >
+		<body>
+			</div><nav class="main-menu" style="z-index: 2;">	  
+			 <div>
+				<a class="logo" href="#">
+				</a> 
+			  </div> 
+			<div class="logo-main">
+				<h2>
+					LOGO
+				</h2>
+			</div>
+			<div class="scrollbar" id="style-1"> 
+				<ul> 
+					<li>                                   
+						<a href="#">
+						<i class="fa fa-home fa-lg"></i>
+						<span class="nav-text">Home</span>
+						</a>
+					</li>  
+					<li>          	                       
+						<a href="#">
+						<i class="fa fa-user fa-lg"></i>
+						<span class="nav-text">Contact</span>
+						</a>
+					</li>       
+				</span>
+				</span>
+				<span class="nav-text">
+				</span>					
+			</a>
+			</li>
+			</nav>
 	</div>
-
-	<div class="content">
+<div class="container">
+	<div class="menu">
+		<span class="menu-item">TRENDING</span>
+		<span class="menu-item">HOW TO BASIC</span>
+		<span class="menu-item">DESIGN THEORY</span>
+		<span class="menu-item">UX/UI DESIGN</span>
+		<span class="menu-item">INFOGRAPHIC</span>
+	</div>
+	<div style="clear: both;"></div>
+	<div class="main">
 		<h1><i class="fas fa-star" style="color:#ffab18;"></i> TRENDING</h1>
 		
 		<a href="category/1/1.html" >
@@ -63,7 +149,7 @@
 		
 		<a href="#" >
 		<div class="card">
-            <div class="card-img" style="background: url('#') center/cover;"></div>
+            <div class="card-img" style="background: url('https://i.imgur.com/AbZKuX2.jpg') center/cover;"></div>
 			<div class="card-text">
 				<span>
 				<div class="card-title">BNK48 คือใคร ?</div>
@@ -74,7 +160,7 @@
 
 		<a href="#" >
 		<div class="card">
-            <div class="card-img" style="background: url('#') center/cover;"></div>
+            <div class="card-img" style="background: url('https://i.imgur.com/AbZKuX2.jpg') center/cover;"></div>
 			<div class="card-text">
 				<span>
 				<div class="card-title">BNK48 คือใคร ?</div>
@@ -84,19 +170,28 @@
 		</a>
 
 		<a href="#" >
-		<div class="card">
-            <div class="card-img" style="background: url('#') center/cover;"></div>
-			<div class="card-text">
-				<span>
-				<div class="card-title">BNK48 คือใคร ?</div>
-                <div class="card-date">21 Oct</div></span>
-            </div>	
-		</div>
+				<div class="card">
+					<div class="card-img" style="background: url('https://i.imgur.com/IeVRO19.jpg') center/cover;"></div>
+					<div class="card-text">
+						<span>
+						<div class="card-title">BNK48 คือใคร ?</div>
+						<div class="card-date">21 Oct</div></span>
+					</div>	
+				</div>
 		</a>
-
+		<a href="#" >
+				<div class="card">
+					<div class="card-img" style="background: url('https://i.imgur.com/IeVRO19.jpg') center/cover;"></div>
+					<div class="card-text">
+						<span>
+						<div class="card-title">BNK48 คือใคร ?</div>
+						<div class="card-date">21 Oct</div></span>
+					</div>	
+				</div>
+				</a>
 		<a href="#" >
 		<div class="card">
-            <div class="card-img" style="background: url('#') center/cover;"></div>
+            <div class="card-img" style="background: url('https://i.imgur.com/v4Ahevr.jpg') center/cover;"></div>
 			<div class="card-text">
 				<span>
 				<div class="card-title">BNK48 คือใคร ?</div>
@@ -104,75 +199,45 @@
             </div>	
 		</div>
 		</a>
-
 		<a href="#" >
-		<div class="card">
-            <div class="card-img" style="background: url('#') center/cover;"></div>
-			<div class="card-text">
-				<span>
-				<div class="card-title">BNK48 คือใคร ?</div>
-                <div class="card-date">21 Oct</div></span>
-            </div>	
-		</div>
+				<div class="card">
+					<div class="card-img" style="background: url('#') center/cover;"></div>
+					<div class="card-text">
+						<span>
+						<div class="card-title">BNK48 คือใคร ?</div>
+						<div class="card-date">21 Oct</div></span>
+					</div>	
+				</div>
 		</a>
-
 		<a href="#" >
-		<div class="card">
-            <div class="card-img" style="background: url('#') center/cover;"></div>
-			<div class="card-text">
-				<span>
-				<div class="card-title">BNK48 คือใคร ?</div>
-                <div class="card-date">21 Oct</div></span>
-            </div>	
-		</div>
+				<div class="card">
+					<div class="card-img" style="background: url('#') center/cover;"></div>
+					<div class="card-text">
+						<span>
+						<div class="card-title">BNK48 คือใคร ?</div>
+						<div class="card-date">21 Oct</div></span>
+					</div>	
+				</div>
 		</a>
+		<a href="#" >
+				<div class="card">
+					<div class="card-img" style="background: url('#') center/cover;"></div>
+					<div class="card-text">
+						<span>
+						<div class="card-title">BNK48 คือใคร ?</div>
+						<div class="card-date">21 Oct</div></span>
+					</div>	
+				</div>
+				</a>
+				
 	</div>
+
 </div>
 
 
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
+</body>
+<script typr="javascript">
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("slide");
-  var y = document.getElementsByClassName("slide-text");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none"; 
-     y[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";
-  y[slideIndex-1].style.display = "block";
-}
-
-var name = "fond";
-
-function change() {
-	var move = document.getElementsByClassName("card");
-
-	if(name == "fond"){
-		name = "mook";
-		for (j = 0; j < move.length; j++) {
-			move[j].style.background = "url('https://static.trueplookpanya.com/tppy/member/m_545000_547500/545994/cms/images/2018-05-May/kaimookbnk48_11.jpg') center/cover";
-		}
-	}
-	else if(name == "mook"){
-		name = "fond";
-		for (j = 0; j < move.length; j++) {
-			move[j].style.background = "url('http://s.isanook.com/mv/0/ui/15/79633/770a8684_copy_1532060397.jpg') center/cover";
-		}
-	}
-	
-}
 
 </script>
-
-</body>
 </html>
