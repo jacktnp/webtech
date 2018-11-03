@@ -11,13 +11,21 @@
 		html{
 			font-family: kanit;
 		}
+		.head{
+			background: url("bg.png") center/cover;
+			width: 101.2%;
+			height: 300px;
+			position: relative;
+			margin:-10px;
+		}
 		.container{
-			width: 50%;
+			position: relative;
+			width: 65%;
 			height: auto;
-			padding: 1em 2em 1em 2em;
+			padding: 1em 3em 1em 3em;
 			margin-right: auto;
 			margin-left: auto;
-			margin-top: 1em; 
+			margin-top: -12em; 
 			background: #fff;
 			box-shadow: 0px 0px 20px rgba(0,0,0,0.25);
 		}
@@ -129,14 +137,84 @@
 	font-size: .75em;
 	float: right;
 }
+
+/* New Card */
+.card{
+	background: rgb(247, 247, 247) ;
+	width: 18em;
+	height: 11.5em;
+    box-shadow: 0px 0px 2px rgba(0,0,0,0.3);
+    border-radius: 20px;
+	padding: .5em .5em 1px .5em;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    margin-right: 1.5em;
+    margin-bottom: 1.5em;
+    align-items: center;
+    text-align: center;
+    transition: .3s;
+}
+
+.card:hover{
+    filter : brightness(0.98);
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+}
+
+.card-img{
+	width: 87%;
+	height: 8em;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+    border-radius: 20px;
+	padding: .5em;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    margin: .5em;
+}
+
+.card-text{
+	background: #fff;
+	color: #000;
+	width: 100%;
+	height: 4.1em;
+	border-radius: 30px 30px 25px 25px;
+	bottom: 0%;
+	position: absolute;
+	margin-left: -8px;
+	transition: .5s;
+}
+
+.card-title{
+	color: #000;
+	margin-top: .55em;
+	margin-left: 1.5em;
+	font-size: 1em;
+	float: left;
+	font-weight: bold;
+	transition: .65s;
+}
+
+.card-date{
+	width: 3em;
+	height: auto;
+	padding: .2em .6em .2em .6em;
+	margin-top: 1em;
+	margin-right: 1.5em;
+	background: #cccccc;
+	color: rgba(0,0,0,0.3);
+	border-radius: 20px;
+	font-size: .75em;
+	float: right;
+}
+
 	</style>
 </head>
 
 <body>
-	<div>
-	<a href="D:/webtech-master/index.html?"> <img src="image\banner.PNG" style="height: 60px; margin-left:52em; "/></a>
-	</div>
-
+<div class="head">
+	<a href="../../index.html"><img src="../image/banner.PNG" style="filter: blur(0px);height: 60px; margin-left: 43%; "/></a>
+</div>
 <div class="container">
 <h2>UI UX คืออะไร ?</h2>
 <div class="info">
@@ -146,8 +224,8 @@
 
 <h3>UX สำคัญมากและเป็นหัวใจของการออกแบบ</h3>
 
-<img src="../image/1_uox0ACp4yBzk47OzYcjbWA.jpg">
-<div class="ref">รูปภาพจาก <a href="https://www.flickr.com/photos/deanmeyers/8642885085">https://www.flickr.com/photos/deanmeyers/8642885085</a></div>
+<center><img src="../image/ux-ui-diff-between-.png"></center>
+<!--<div class="ref">รูปภาพจาก <a href="https://www.flickr.com/photos/deanmeyers/8642885085">https://www.flickr.com/photos/deanmeyers/8642885085</a></div>-->
 
 <p>เนื่องจากได้เฝ้ามองการพัฒนาแอ็ปบางตัวมาระยะหนึ่ง (ตัวแรกก็น่าจะตั้งแต่ปี 2555 กับอีกระบบที่กำลังพัฒนากันอยู่เป็นปีแล้วยังไม่เห็นรูปร่าง) เท่าที่มีโอกาสได้ร่วมฟังทางฝั่งผู้พัฒนาแอ็ปมีแต่คนพูดถึงการออกแบบตาม “ความต้องการ” (ซึ่งในที่นี่คือ TOR) ถึงแม้จะมีการเก็บ Requirement แต่ดูจากคำถามแล้ว มั่นใจว่าคนถามก็ไม่เข้าใจกระบวนการทำงาน ถ้าเริ่มต้นยังไม่รู้ว่าจะใช้งานอะไรแบบไหน ก็ไม่แปลกใจที่ UX จะออกมาแย่ หรือ ไม่คำนึงถึง Usability Design (การออกแบบให้ใช้ทำงานสะดวก)</p>
 
@@ -196,27 +274,41 @@
 
 <hr>
 
-<h2>Recent :</h2>
+<h2>Popular :</h2>
 
 <center>
+<a href="#" >
+		<div class="card">
+            <div class="card-img" style="background: url('../../image/graphic-design-trends-2018-1.jpg') center/cover;"></div>
+			<div class="card-text">
+				<span>
+				<div class="card-title">Graphic Design Trends 2018</div>
+                <div class="card-date">21 Oct</div></span>
+            </div>	
+		</div>
+		</a>
 
-<div class="cardx" style="background: url('https://cdn-images-1.medium.com/max/1250/1*uox0ACp4yBzk47OzYcjbWA.jpeg') center/cover">
-	<div class="cardx-text">
-		<span>
-			<div class="cardx-title">UI UX คืออะไร ?</div>
-			<div class="cardx-date">21 Oct</div>
-		</span>
-	</div>
-</div>
+		<a href="#" >
+		<div class="card">
+            <div class="card-img" style="background: url('../../image/graphic-design-trends-2018-1.jpg') center/cover;"></div>
+			<div class="card-text">
+				<span>
+				<div class="card-title">Graphic Design Trends 2018</div>
+                <div class="card-date">21 Oct</div></span>
+            </div>	
+		</div>
+		</a>
 
-<div class="cardx" style="background: url('https://cdn-images-1.medium.com/max/1250/1*uox0ACp4yBzk47OzYcjbWA.jpeg') center/cover">
-	<div class="cardx-text">
-		<span>
-			<div class="cardx-title">UI UX คืออะไร ?</div>
-			<div class="cardx-date">21 Oct</div>
-		</span>
-	</div>
-</div>
+		<a href="#" >
+		<div class="card">
+            <div class="card-img" style="background: url('../../image/graphic-design-trends-2018-1.jpg') center/cover;"></div>
+			<div class="card-text">
+				<span>
+				<div class="card-title">Graphic Design Trends 2018</div>
+                <div class="card-date">21 Oct</div></span>
+            </div>	
+		</div>
+		</a>
 
 </center>
 
