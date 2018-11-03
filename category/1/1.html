@@ -13,7 +13,7 @@
 		}
 		.head{
 			background: url("bg.png") center/cover;
-			width: 101.2%;
+			width: 100.9%;
 			height: 300px;
 			position: relative;
 			margin:-10px;
@@ -25,7 +25,8 @@
 			padding: 1em 3em 1em 3em;
 			margin-right: auto;
 			margin-left: auto;
-			margin-top: -12em; 
+			margin-top: -12em;
+			margin-bottom: 2em;
 			background: #fff;
 			box-shadow: 0px 0px 20px rgba(0,0,0,0.25);
 		}
@@ -207,16 +208,33 @@
 	font-size: .75em;
 	float: right;
 }
+.totop{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	color: #000;
+	text-align: center;
+	font-size: 2.5em;
+	background: #fff;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+}
 
 	</style>
 </head>
 
 <body>
-<div class="head">
+	<a href="#head">
+		<div class="totop">^</div>
+	</a>
+	
+<div class="head" id="head">
 	<a href="../../index.html"><img src="../image/banner.PNG" style="filter: blur(0px);height: 60px; margin-left: 43%; "/></a>
 </div>
 <div class="container">
-<h2>UI UX คืออะไร ?</h2>
+<h1>UI UX คืออะไร ?</h1>
 <div class="info">
 	<span class="date">21 Oct 2018</span>
 	<span class="writer">by Jack'tnp</span>
