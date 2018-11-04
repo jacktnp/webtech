@@ -5,242 +5,46 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../../css/blog.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 	<style type="text/css">
-		html{
-			font-family: kanit;
-		}
 		.head{
+			position: relative;
 			background: url("bg.png") center/cover;
 			width: 100.9%;
-			height: 300px;
-			position: relative;
+			height: 400px;
 			margin:-10px;
 		}
-		.container{
-			position: relative;
-			width: 65%;
-			height: auto;
-			padding: 1em 3em 1em 3em;
-			margin-right: auto;
-			margin-left: auto;
-			margin-top: -12em;
-			margin-bottom: 2em;
-			background: #fff;
-			box-shadow: 0px 0px 20px rgba(0,0,0,0.25);
-		}
-		h2{
-			font-weight: bold;
-		}
-		.info{
-			margin: -15px 0px 15px 0px;
-		}
-		.date{
-			width: 5em;
-			height: auto;
-			padding: .2em .6em .2em .6em;
-			background: #cccccc;
-			color: #fff;
-			border-radius: 20px;
-			font-size: .75em;
-			text-align: center;
-		}
-		.tag{
-			width: 5em;
-			height: auto;
-			padding: .2em .6em .2em .6em;
-			background: #cccccc;
-			color: #fff;
-			border-radius: 20px;
-			font-size: .75em;
-			text-align: center;
-		}
-		.writer::before { 
-    		content: '✎ ';
-		}
-		.writer{
-			font-size: .85em;
-			color: #ccc;
-		}
-		.ref{
-			font-size: .85em;
-			margin-left: 2.5em;
-		}
-		/* img{
-			width: 85%;
-			margin-left: 1.5em;
-			border-radius: 15px;
-			box-shadow: 0px 0px 3px 1px;
-		} */
-		p{
-			text-indent: 1.5em;
-			margin-bottom: 1.5em;
-		}
-		blockquote{
-			border-left: 2px solid #000;
-			padding-left: 2.5em;
-			margin-left: 0em;
-		}
-
-		.cardx{
-	width: 16em;
-	height: 10em;
-	box-shadow: 0px 0px 1px 1px #000;
-	padding: .5em;
-    display: inline-block;
-    position: relative;
-    vertical-align: top;
-    margin-right: 1.5em;
-    margin-bottom: 1.5em;
-}
-
-.cardx-text{
-	background: #fff;
-	color: #000;
-	width: 100%;
-	height: 4.5em;
-	border-radius: 30px 30px 0px 0px;
-	bottom: 0%;
-	position: absolute;
-	margin-left: -8px;
-	margin-bottom: -1px;
-	transition: .5s;
-}
-
-.cardx:hover .cardx-text{
-	background: #000000a6;
-	color: #fff;
-	width: 100%;
-	height: 100%;
-	border-radius: 0px;
-	margin-bottom: 0px;
-}
-
-.cardx-title{
-	margin-top: 1.55em;
-	margin-left: 1.5em;
-	font-size: 1em;
-	float: left;
-	font-weight: bold;
-	transition: .65s;
-}
-
-.cardx-date{
-	width: 3em;
-	height: auto;
-	padding: .2em .6em .2em .6em;
-	margin-top: 2em;
-	margin-right: 1.5em;
-	background: #cccccc;
-	color: #000;
-	border-radius: 20px;
-	font-size: .75em;
-	float: right;
-}
-
-/* New Card */
-.card{
-	background: rgb(247, 247, 247) ;
-	width: 18em;
-	height: 11.5em;
-    box-shadow: 0px 0px 2px rgba(0,0,0,0.3);
-    border-radius: 20px;
-	padding: .5em .5em 1px .5em;
-    display: inline-block;
-    position: relative;
-    vertical-align: top;
-    margin-right: 1.5em;
-    margin-bottom: 1.5em;
-    align-items: center;
-    text-align: center;
-    transition: .3s;
-}
-
-.card:hover{
-    filter : brightness(0.98);
-    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
-}
-
-.card-img{
-	width: 87%;
-	height: 8em;
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
-    border-radius: 20px;
-	padding: .5em;
-    display: inline-block;
-    position: relative;
-    vertical-align: top;
-    margin: .5em;
-}
-
-.card-text{
-	background: #fff;
-	color: #000;
-	width: 100%;
-	height: 4.1em;
-	border-radius: 30px 30px 25px 25px;
-	bottom: 0%;
-	position: absolute;
-	margin-left: -8px;
-	transition: .5s;
-}
-
-.card-title{
-	color: #000;
-	margin-top: .55em;
-	margin-left: 1.5em;
-	font-size: 1em;
-	float: left;
-	font-weight: bold;
-	transition: .65s;
-}
-
-.card-date{
-	width: 3em;
-	height: auto;
-	padding: .2em .6em .2em .6em;
-	margin-top: 1em;
-	margin-right: 1.5em;
-	background: #cccccc;
-	color: rgba(0,0,0,0.3);
-	border-radius: 20px;
-	font-size: .75em;
-	float: right;
-}
-.totop{
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	color: #000;
-	text-align: center;
-	font-size: 2.5em;
-	background: #fff;
-	position: fixed;
-	right: 20px;
-	bottom: 20px;
-	box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
-}
-
 	</style>
 </head>
 
 <body>
-	<a href="#head">
-		<div class="totop">^</div>
-	</a>
-	
-<div class="head" id="head">
-	<a href="../../index.html"><img src="../image/banner.PNG" style="filter: blur(0px);height: 60px; margin-left: 43%; "/></a>
+
+<a href="../../index.html"><img src="../image/banner.PNG" id="logo" style="height: 60px; margin-left: 43%; "/></a>
+
+<div class="head"></div>
+
+<div class="category">
+	<div class="category-item">BASIC</div>
+	<div class="category-item">THEORY</div>
+	<div class="category-item">UX/UI DESIGN</div>
+	<div class="category-item">INFOGRAPHIC</div>
+	<div class="category-item-select" style="border-bottom: 0px;">TRENDING</div>
 </div>
+
 <div class="container">
-<h1>UI UX คืออะไร ?</h1>
+
 <div class="info">
 	<span class="date">21 Oct 2018</span>
 	<span class="writer">by Jack'tnp</span>
 </div>
 
-<h3>UX สำคัญมากและเป็นหัวใจของการออกแบบ</h3>
+<div style="clear:both;"></div>
+
+<h1>UI UX คืออะไร ?</h1>
+
+<h2>UX สำคัญมากและเป็นหัวใจของการออกแบบ</h2>
 
 <center><img src="../image/ux-ui-diff-between-.png"></center>
 <!--<div class="ref">รูปภาพจาก <a href="https://www.flickr.com/photos/deanmeyers/8642885085">https://www.flickr.com/photos/deanmeyers/8642885085</a></div>-->
@@ -249,7 +53,7 @@
 
 <hr>
 
-<h3>ว่าแต่ UI/UX คืออะไร</h3>
+<h2>ว่าแต่ UI/UX คืออะไร</h2>
 
 <p><b>UI = User Interface</b> ตรงนี้มีคนแปลว่า “ส่วนติดต่อผู้ใช้” บ้างก็แปลว่า “หน้าจอผู้ใช้” คือสิ่งที่ผู้ใช้งานมองเห็นผ่านอุปกรณ์ทำงาน</p>
 
@@ -278,7 +82,7 @@
 
 <p>ทำไมถึงหลงลืมเรื่อง การใช้ทรัพยากรที่เหมาะสม (Resource) ความสามารถในการเรียนรู้ (Learnability) การตอบสนองด้านอารมณ์และพฤติกรรมต่อสินค้าและบริการ (Emotional and Behavioral Response)</p>
 
-<h3>สมมตินะ</h3>
+<h2>สมมตินะ</h2>
 
 <p>ออกแบบเว็บไซต์หรือแอ็ปที่เกี่ยวกับแผนที่การเดินทาง คุณใส่ข้อมูลประดามีในมือในเว็บ ออกแบบสวยงาม แต่พอผู้ใช้งานอยากจะปักหมุดลงแผนที่เพื่อกำหนด POI แต่กว่าจะกดปักหมุดต้องใส่ข้อมูลห่าเหวอะไร คลิกแล้วคลิกอีก ขยับไปแค่ 50 เมตรก็ต้องเริ่มขั้นตอนใหม่ แบบนี้บ้าหรือเปล่า? จะสั่งค้นหาถนน ดันได้แต่พิกัด X,Y แล้วจะบอกแท็กซี่อย่างไร ไปละติจูดนี้ ลองติจูดนี้ เอาแบบนี้เหรอ?</p>
 
@@ -292,7 +96,7 @@
 
 <hr>
 
-<h2>Popular :</h2>
+<h2>Recommend :</h2>
 
 <center>
 <a href="#" >
@@ -327,9 +131,11 @@
             </div>	
 		</div>
 		</a>
-
 </center>
-
 </div>
+
+<div class="footer">Footer</div>
+
+<a href="#logo"><div class="totop">^</div></a>
 </body>
 </html>

@@ -513,8 +513,8 @@ input:checked + .slide-container .nav label { display: block; }
 
 .nav-dots {
 	width: 100%;
-	bottom: 9px;
-	height: 11px;
+	bottom: 30px;
+	height: 10px;
 	display: block;
 	position: absolute;
 	text-align: center;
