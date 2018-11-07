@@ -37,10 +37,9 @@ h1{
 }
 
 .menu-item{
-	width: 12em;
-	height: 12em;
+	width: 10.2em;
+	height: 10.2em;
 	margin: .5em;
-	margin-left: 2em;
 	padding: .75em;
 	border-radius: 7px;
 	text-align: center;

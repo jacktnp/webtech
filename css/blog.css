@@ -55,8 +55,20 @@ blockquote{
 	border-radius: 15px 15px 0px 0px;
 }
 
-.container img{
+.container img {
 	width: 100%;
+}
+
+#w-70 img {
+	position: relative;
+	left: 15%;
+	width: 70%;
+}
+
+#w-50 img {
+	position: relative;
+	left: 25%;
+	width: 50%;
 }
 
 .info{
@@ -98,6 +110,11 @@ blockquote{
 .ref{
 	font-size: .85em;
 	margin-left: 2.5em;
+}
+
+.ref-center{
+	font-size: .85em;
+	margin-left: 40%;
 }
 
 /* Card */
