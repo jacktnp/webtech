@@ -44,6 +44,13 @@ blockquote{
 	filter: blur(13px);
 }
 
+.cover-index{
+	position: relative;
+	width: 100%;
+	height: 350px;
+	background: url('../assets/cover/cover.jpg') center/cover;
+}
+
 .container{
 	position: relative;
 	width: 65%;
