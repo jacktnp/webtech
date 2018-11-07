@@ -51,12 +51,12 @@ h1{
 	color: rgba(1,1,1,0);
 }
 .basic{
-	background-image: url(../css/01.jpg);
+	background-image: url(../01.jpg);
 	background-size: cover;
 }
 
 .theory{
-	background-image: url(../css/02.jpg);
+	background-image: url(../02.jpg);
 	background-size: cover;
 }
 
