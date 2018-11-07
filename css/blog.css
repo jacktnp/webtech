@@ -1,7 +1,10 @@
 /* blog.css */
 
-html{
-	font-family: kanit;
+html, body { 
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   font-family: kanit;
 }
 
 a{
@@ -21,6 +24,24 @@ h2{
 
 p{
 	font-size: 1.2em;
+	text-indent: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+blockquote{
+	border-left: 2px solid #000;
+	padding-left: 2.5em;
+	margin-left: 0em;
+	background: #00000024;
+	padding: 1em;
+	font-size: 1.2em;
+}
+
+.cover{
+	position: relative;
+	width: 100%;
+	height: 350px;
+	filter: blur(13px);
 }
 
 .container{
@@ -28,7 +49,7 @@ p{
 	width: 65%;
 	height: auto;
 	padding: 1em 3em 1em 3em;
-	margin: -12em auto 2em auto;
+	margin: -16em auto 2em auto;
 	background: #fff;
 	box-shadow: 0px 0px 20px rgba(0,0,0,0.25);
 	border-radius: 15px 15px 0px 0px;
@@ -77,17 +98,6 @@ p{
 .ref{
 	font-size: .85em;
 	margin-left: 2.5em;
-}
-
-p{
-	text-indent: 1.5em;
-	margin-bottom: 1.5em;
-}
-
-blockquote{
-	border-left: 2px solid #000;
-	padding-left: 2.5em;
-	margin-left: 0em;
 }
 
 /* Card */
@@ -173,58 +183,50 @@ blockquote{
 	box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
 }
 
+#logo{
+	height: 60px;
+	margin-left: 14%;
+}
+
 .category{
+	position: absolute;
 	display: flex;
-	flex-direction: column;
-	position: fixed;
-	background: #0000008f;
-	box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
-	top: 270px;
-	width: 120px;
-	height: 250px;
-	left : 0px;
+	flex-direction: row;
+	top: .7em;
+	right : 14%;
 	font-size: 1em;
-	border-radius: 0px 20px 20px 0px;
+	text-align: center;
 }
 
 .category-item{
-	padding-left: .55em;
-	padding-top: .75em; 
-	height: 50px;
-	color: #fff;
-	text-align: left;
-	border-bottom: 1px solid #3c3c3c;
+	color: #000;
+	width: auto;
+	height: 20px;
+	padding: .6em;
+	border-radius: 15px;
+	margin-right: .6em;
 	transition: 0.5s;
 	cursor: pointer;
 }
 
 .category-item:hover{
-	background: #000000cc;
-}
-
-.category-item-select { 
-    padding-left: .55em;
-	padding-top: .75em; 
-	height: 50px;
+	border-radius: 20px;
 	color: #fff;
-	text-align: left;
-	border-bottom: 1px solid #3c3c3c;
-	transition: 0.5s;
-	cursor: pointer;
-	background: #000000cc;
-	border-radius: 0px 0px 20px 0px;
+	background: #000000a8;
 }
 
-.category-item-select::before { 
-    content: "<i class="fas fa-arrow-alt-square-up"></i> ";
+#selected { 
+    border-radius: 20px !important;
+	color: #fff !important;
+	background: #000000a8 !important;
 }
 
 .footer{
-	width: 85%;
-	padding: 3em;
+	width: 100%;
 	height: 120px;
-	margin: 0px auto 0px auto;
+	margin: 100px auto 0px auto;
+	padding: 4em 0em 2em 0em;
 	text-align: center;
-	background: #fff;
-	box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+	background: #f2f2f2;
+	border-top: .75px solid #c1c1c140;
 }
