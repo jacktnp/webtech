@@ -262,6 +262,16 @@ font-size:20px;
 
 }
 
+.footer{
+	width: 100%;
+	height: 120px;
+	margin: 100px auto 0px auto;
+	padding: 2.2em 0em 2.2em 0em;
+	text-align: center;
+	background: #f2f2f2;
+	border-top: .75px solid #c1c1c140;
+}
+
 
 
 .main-menu:hover, nav.main-menu.expanded {
