@@ -65,6 +65,21 @@ h1{
 	background-size: cover;
 }
 
+.ux-ui{
+	background-image: url('../assets/square/categories-03.jpg');
+	background-size: cover;
+}
+
+.info{
+	background-image: url('../assets/square/categories-04.jpg');
+	background-size: cover;
+}
+
+.trend{
+	background-image: url('../assets/square/categories-05.jpg');
+	background-size: cover;
+}
+
 
 .menu-item:hover{
 	cursor: pointer;
