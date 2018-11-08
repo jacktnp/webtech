@@ -346,3 +346,60 @@ blockquote{
 	background: #a4a4a4ad;
 	color: #7a7a7a;
 }
+
+/* Ribbon */
+
+.ribbon {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 5;
+}
+.ribbon::before,
+.ribbon::after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  display: block;
+  border: 5px solid #215476;
+}
+.ribbon span {
+  position: absolute;
+  display: block;
+  width: 175px;
+  padding: 5px 0;
+  background: #ffe259;
+  background: -webkit-linear-gradient(to right, #5433ff, #20bdff, #a5fecb);
+  background: linear-gradient(to right, #5433ff, #20bdff, #a5fecb);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font: 700 16px/1 'Lato', sans-serif;
+  text-shadow: 0 1px 1px rgba(0,0,0,.3);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* top left*/
+.ribbon-top-left {
+  top: -10px;
+  left: -10px;
+}
+.ribbon-top-left::before,
+.ribbon-top-left::after {
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+.ribbon-top-left::before {
+  top: 0;
+  right: 0;
+}
+.ribbon-top-left::after {
+  bottom: 0;
+  left: 0;
+}
+.ribbon-top-left span {
+  right: -25px;
+  top: 30px;
+  transform: rotate(-45deg);
+}
